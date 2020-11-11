@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="File_Download__URL_Session_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7r-OE-IOP">
+                                <rect key="frame" x="104" y="403" width="206" height="71"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="6wf-S1-7E6"/>
+                                    <constraint firstAttribute="width" constant="206" id="IB7-N6-VwU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Download File"/>
+                                <connections>
+                                    <action selector="btnDownloadFileTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wly-wZ-fHX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-YM-YOR">
+                                <rect key="frame" x="104" y="496" width="206" height="59"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="0.74269584760273977" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="1Yb-DG-REf"/>
+                                    <constraint firstAttribute="width" constant="206" id="oq7-o5-eZR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <state key="normal" title="Open File"/>
+                                <connections>
+                                    <action selector="btnOpenFileTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2wS-1N-paq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u7r-OE-IOP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="359" id="JjB-ov-0Tl"/>
+                            <constraint firstItem="u7r-OE-IOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RoB-kg-fIO"/>
+                            <constraint firstItem="0dm-YM-YOR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhd-xJ-DEr"/>
+                            <constraint firstItem="0dm-YM-YOR" firstAttribute="top" secondItem="u7r-OE-IOP" secondAttribute="bottom" constant="22" id="rGZ-0F-Qxf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnOpenFile" destination="0dm-YM-YOR" id="qEE-My-T8C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>
